@@ -35,7 +35,7 @@ const Navbar = () => {
         {/* Call to Action */}
         <div className="items-center hidden mt-4 space-x-4 md:flex md:mt-0">
           <a
-            href="#hire-me"
+            href="#contact"
             className="px-4 py-2 text-white transition duration-300 ease-in-out bg-blue-600 rounded-full hover:bg-blue-700"
           >
             Hire Me
