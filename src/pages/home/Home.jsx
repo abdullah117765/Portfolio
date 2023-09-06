@@ -69,17 +69,17 @@ const Portfolio = () => {
         id="hero"
         className="flex flex-col items-center justify-center p-8 lg:flex-row lg:p-16"
       >
-        <div className="text-center lg:w-1/2 lg:text-left lg:mx-16">
+        <div className="text-center lg:w-1/2 lg:text-left lg:mx-16 ">
           <div
-            className="mb-16 font-bold text-7xl"
+            className="mb-16 text-3xl font-bold xl:text-7xl"
             style={{ height: "2rem" }} // Set a fixed height
           >
             {typewriterText}
           </div>
-          <div className="mb-6 text-6xl animate__animated animate__fadeIn animate__delay-2s">
+          <div className="mb-6 text-6xl animate__animated animate__fadeIn animate__delay-2s ">
             Web Developer
           </div>
-          <p className="max-w-xl mx-auto mb-8 text-lg animate__animated animate__fadeIn animate__delay-3s">
+          <p className="max-w-xl mx-auto mb-8 ml-0 text-lg  animate__animated animate__fadeIn animate__delay-3s">
             Welcome to my portfolio website. I'm passionate about creating web applications and solving problems with code. Feel free to explore my work and connect with me on social media.
           </p>
           <div className="mt-4 space-x-4 lg:mt-8 animate__animated animate__fadeIn animate__delay-4s">
@@ -117,7 +117,7 @@ const Portfolio = () => {
             </a>
           </div>
         </div>
-        <div className="text-center lg:w-1/2">
+        <div className="w-full h-full text-center lg:w-1/2">
           <img
             src={profilepic}
             alt="Abdulla's Profile"

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import CV from "../../resources/Cv4.pdf";
 const Navbar = () => {
   return (
     <nav className="py-4 bg-black">
@@ -19,17 +19,15 @@ const Navbar = () => {
             <a href="#about" className='text-lg font-semibold'>About Me</a>
           </li>
           <li className="transition duration-300 ease-in-out hover:text-gray-400">
-            <a href="#whatido" className='text-lg font-semibold'>what i Do</a>
+            <a href="#whatido" className='text-lg font-semibold'>Experties</a>
           </li>
           <li className="transition duration-300 ease-in-out hover:text-gray-400">
             <a href="#contact" className='text-lg font-semibold'>Contact</a>
           </li>
           <li className="transition duration-300 ease-in-out hover:text-gray-400">
-            <a href="#resume" className='text-lg font-semibold'>Resume</a>
+            <a href="#resume" className='text-lg font-semibold'>Education</a>
           </li>
-          <li className="transition duration-300 ease-in-out hover:text-gray-400">
-            <a href="#about" className='text-lg font-semibold'>Cv</a>
-          </li>
+          
         </ul>
 
         {/* Call to Action */}
@@ -41,10 +39,11 @@ const Navbar = () => {
             Hire Me
           </a>
           <a
-            href="#resume"
+           href={CV}  // Replace with the actual path to your CV file
+  download="Cv4.pdf"
             className="px-4 py-2 text-white transition duration-300 ease-in-out border border-white rounded-full hover:bg-gray-800 hover:border-gray-800"
           >
-            Resume
+           Download Cv
           </a>
         </div>
       </div>

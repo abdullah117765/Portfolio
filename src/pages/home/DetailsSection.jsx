@@ -24,17 +24,18 @@ const WhatIDo = () => {
       icon: faCode,
     },
     {
-      title: "Desktop Application",
-      description:
-        "I develop Java and C# desktop applications, delivering user-friendly and efficient software solutions for various platforms.",
-      icon: faDesktop,
-    },
-    {
       title: "Ci/Cd Pipeline",
       description:
         "I design and implement CI/CD pipelines to automate and streamline project development, ensuring rapid and reliable software delivery.",
       icon: faCodeCommit,
     },
+    {
+      title: "Desktop Application",
+      description:
+        "I develop Java and C# desktop applications, delivering user-friendly and efficient software solutions for various platforms.",
+      icon: faDesktop,
+    },
+    
     {
       title: "Software Rengineering",
       description:
