@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback} from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLinkedin,
@@ -7,48 +7,76 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import profilepic from "../../resources/me.jpeg";
+
 import KnowMeMore from "./KnowMeMore";
 import WhatIDo from "./DetailsSection";
 import Resume from "./Resume";
 import Contact from "./ContactInfo";
 import Footer from "./Footer";
+import "animate.css/animate.min.css";
+
 
 const Portfolio = () => {
   const [typewriterText, setTypewriterText] = useState("");
   const greetingText = "Hello, I'm Abdullah";
   const typingSpeed = 150; // Adjust typing speed (milliseconds per character)
+  const backspaceSpeed = 100; // Adjust backspace speed (milliseconds per character)
+  const delayBeforeRestart = 1000; // Delay before restarting the animation
 
-  const resetTypewriter = useCallback(() => {
+  const typeAndBackspace = useCallback(() => {
     let currentIndex = 0;
-    const interval = setInterval(() => {
+    const typeInterval = setInterval(() => {
       if (currentIndex < greetingText.length) {
         setTypewriterText(greetingText.slice(0, currentIndex + 1));
         currentIndex++;
       } else {
-        clearInterval(interval);
+        clearInterval(typeInterval);
+
         setTimeout(() => {
-          setTypewriterText("");
-          resetTypewriter();
-        }, 3000); // Delay before restarting the animation (2 seconds in this example)
+          // Start backspacing
+          const backspaceInterval = setInterval(() => {
+            if (currentIndex > 0) {
+              setTypewriterText(greetingText.slice(0, currentIndex - 1));
+              currentIndex--;
+            } else {
+              clearInterval(backspaceInterval);
+
+              // Delay before restarting
+              setTimeout(() => {
+                typeAndBackspace();
+              }, delayBeforeRestart);
+            }
+          }, backspaceSpeed);
+        }, delayBeforeRestart);
       }
     }, typingSpeed);
 
     return () => {
-      clearInterval(interval);
+      clearInterval(typeInterval);
     };
   }, []);
 
   useEffect(() => {
-    resetTypewriter();
-  }, [resetTypewriter]);
+    typeAndBackspace();
+  }, [typeAndBackspace]);
 
   return (
-    <div className="min-h-screen pt-48 text-white bg-black">     
+    <div
+      className="min-h-screen pt-56 overflow-hidden text-white bg-black" // Add overflow-hidden
+    >
       {/* Hero Section */}
-      <section id="hero" className="flex flex-col items-center justify-center p-8 lg:flex-row lg:p-16">
+      <section
+        id="hero"
+        className="flex flex-col items-center justify-center p-8 lg:flex-row lg:p-16"
+      >
         <div className="text-center lg:w-1/2 lg:text-left lg:mx-16">
-          <div className="mb-16 font-bold text-7xl">{typewriterText}</div>
-          <div className="mb-6 text-4xl animate__animated animate__fadeIn animate__delay-2s" >
+          <div
+            className="mb-16 font-bold text-7xl"
+            style={{ height: "2rem" }} // Set a fixed height
+          >
+            {typewriterText}
+          </div>
+          <div className="mb-6 text-6xl animate__animated animate__fadeIn animate__delay-2s">
             Web Developer
           </div>
           <p className="max-w-xl mx-auto mb-8 text-lg animate__animated animate__fadeIn animate__delay-3s">
@@ -56,7 +84,7 @@ const Portfolio = () => {
           </p>
           <div className="mt-4 space-x-4 lg:mt-8 animate__animated animate__fadeIn animate__delay-4s">
             <a
-              href="your-linkedin-profile"
+              href="https://www.linkedin.com/in/mian-abdullah-6b2661221"
               target="_blank"
               rel="noopener noreferrer"
               className="text-4xl hover:text-blue-500"
@@ -64,7 +92,7 @@ const Portfolio = () => {
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
             <a
-              href="your-github-profile"
+              href="https://github.com/abdullah117765"
               target="_blank"
               rel="noopener noreferrer"
               className="text-4xl hover:text-blue-500"
@@ -72,7 +100,7 @@ const Portfolio = () => {
               <FontAwesomeIcon icon={faGithub} />
             </a>
             <a
-              href="your-facebook-profile"
+              href="https://www.facebook.com/donmas.mas.75"
               target="_blank"
               rel="noopener noreferrer"
               className="text-4xl hover:text-blue-500"
@@ -80,7 +108,7 @@ const Portfolio = () => {
               <FontAwesomeIcon icon={faFacebook} />
             </a>
             <a
-              href="your-twitter-profile"
+              href="https://twitter.com/abdullah117765"
               target="_blank"
               rel="noopener noreferrer"
               className="text-4xl hover:text-blue-500"
@@ -97,18 +125,16 @@ const Portfolio = () => {
           />
         </div>
       </section>
-      
 
       {/* know me more Section */}
-      
-        <KnowMeMore/>
-      
-        <WhatIDo/>
 
-        <Resume/>
-        <Contact/>
-      <Footer/>
-      
+      <KnowMeMore />
+
+      <WhatIDo />
+
+      <Resume />
+      <Contact />
+      <Footer />
     </div>
   );
 };

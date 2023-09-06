@@ -32,7 +32,7 @@ const SkillBadge = ({ title }) => {
 
 const Resume = () => {
   return (
-    <section id="resume" className="py-16 text-white bg-gray-800">
+    <section id="resume" className="py-16 text-white bg-slate-800">
       <div className="container mx-auto">
         <h2 className="mb-12 text-4xl font-semibold text-center">Resume</h2>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -40,45 +40,47 @@ const Resume = () => {
           <div>
             <h3 className="mb-4 text-xl font-semibold">My Education</h3>
             <EducationCard
-              year="2000 - 2004"
-              degree="Computer Science"
-              institution="International University"
-              description="Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure."
+              year="2016 - 2018"
+              degree="Matric"
+              institution="Fauji Foundation College Rawalpindi"
+              description="Learning the basics of Mathematics, Physics, Chemistry "
             />
             <EducationCard
-              year="2005 - 2008"
-              degree="Bachelor Degree"
-              institution="University of California"
-              description="Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure."
+              year="2018 - 2020"
+              degree="FSC "
+              institution="Fauji Foundation College Rawalpindi"
+              description="Deep diving into the world of Mathematics, Physics, Chemistry."
             />
             <EducationCard
-              year="2009 - 2012"
-              degree="Master Degree"
-              institution="Harvard University"
-              description="Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure."
+              year="2020 - 2024"
+              degree="Bs Software Engineering "
+              institution="Fast Nuces Islamabad"
+              description="Embarking on a journey of learning web, application, and cloud development to craft scalable and innovative digital solutions."
             />
           </div>
 
           {/* Right Column - Work Experience */}
           <div>
             <h3 className="mb-4 text-xl font-semibold">My Experience</h3>
-            <ExperienceCard
-              year="2012 - 2013"
-              position="Jr. UI UX Designer"
-              company="Themeforest"
-              description="Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure."
+           
+            
+             <ExperienceCard
+              year="2022 - 2022"
+              position="Android Development"
+              company="Netwest Technology"
+              description="In this short Internship i explored the world of Android development using Android Studio."
             />
             <ExperienceCard
-              year="2014 - 2016"
-              position="Jr. Product Designer"
-              company="Dribbble"
-              description="Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure."
+              year="2023 - 2023"
+              position="Web Developer"
+              company="Mern STack"
+              description="In this Internship i explored the world of Web development gaining experinece in Mern Stack ."
             />
             <ExperienceCard
-              year="2017 - 2019"
-              position="Product Designer"
-              company="Adobe"
-              description="Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure."
+              year="2022 - current"
+              position="Freelancer "
+              company="Upwork/Fiver"
+              description="I am a freelance web developer crafting custom web applications to meet clients' unique needs and aspirations."
             />
           </div>
         </div>
@@ -87,12 +89,19 @@ const Resume = () => {
         <div className="mt-12">
           <h3 className="mb-4 text-xl font-semibold">My Skills</h3>
           <div className="flex flex-wrap">
-            <SkillBadge title="Web Design" />
+            <SkillBadge title="Mongo Db" />
             <SkillBadge title="HTML/CSS" />
             <SkillBadge title="JavaScript" />
             <SkillBadge title="React JS" />
-            <SkillBadge title="Angular JS" />
-            <SkillBadge title="Bootstrap" />
+            <SkillBadge title="Type Script" />
+            <SkillBadge title="Tailwind Css" />
+            <SkillBadge title="Sql Databases" />
+            <SkillBadge title="Docker" />
+            <SkillBadge title="Github" />
+            <SkillBadge title="Ci/cd Pipeline" />
+            <SkillBadge title="Java" />
+            <SkillBadge title="C#" />
+            <SkillBadge title="AWs" />
           </div>
         </div>
       </div>

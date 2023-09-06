@@ -10,28 +10,32 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-16 bg-gray-100">
+    <section id="contact" className="py-10 bg-gray-900">
       <div className="container px-4 mx-auto">
-        <h2 className="mb-8 text-3xl font-semibold text-gray-800">Contact Me</h2>
-        <div className="md:flex md:space-x-8">
+        <h2 className="mb-8 text-3xl font-semibold text-white">Contact Me</h2>
+        <div className=" md:flex md:space-x-8">
           {/* Contact Information */}
-          <div className="md:w-1/2">
-            <div className="mb-4">
-              <h3 className="text-xl font-semibold text-gray-700">Address:</h3>
-              <p className="text-gray-600">{address}</p>
+          <div className="flex flex-row md:w-1/2">
+            <div className="mx-10 mb-4">
+              <h3 className="text-xl font-semibold text-white">Address</h3>
+              <p className="text-white">{address}</p>
             </div>
-            <div className="mb-4">
-              <h3 className="text-xl font-semibold text-gray-700">Phone:</h3>
-              <p className="text-gray-600">{phoneNumber}</p>
+            <div className="mx-10 mb-4">
+              <h3 className="text-xl font-semibold text-white">Phone:</h3>
+              <p className="text-white">{phoneNumber}</p>
             </div>
-            <div className="mb-4">
-              <h3 className="text-xl font-semibold text-gray-700">Email:</h3>
-              <p className="text-gray-600">
+            <div className="mx-10 mb-4">
+              <h3 className="text-xl font-semibold text-white">Email:</h3>
+              <p className="text-white">
                 <a href={`mailto:${email}`}>{email}</a>
               </p>
             </div>
 
-            <div className="md:w-1/2">
+           
+          
+          </div>
+          {/* Email Button */}
+          <div className="md:w-1/2">
             <button
               onClick={composeEmail}
               className="px-4 py-2 font-semibold text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300"
@@ -39,10 +43,7 @@ const Contact = () => {
                Email Me
             </button>
           </div>
-          
-          </div>
-          {/* Email Button */}
-          
+
         </div>
       </div>
     </section>

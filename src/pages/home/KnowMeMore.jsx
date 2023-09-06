@@ -1,20 +1,19 @@
 // src/components/KnowMeMore.js
 import React from 'react';
-
+import CV from "../../resources/Cv4.pdf";
 const KnowMeMore = () => {
   return (
-    <section className="py-32 text-white mt-80 bg-gradient-to-r from-purple-500 via-blue-500 to-green-500">
+    <section id="about" className="py-32 text-white bg-gray-900 mt-80">
       <div className="container px-6 mx-auto text-center">
         <h2 className="mb-32 text-4xl font-bold">Know Me More</h2>
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
           <div className="text-left">
             <p className="mb-4 text-2xl font-semibold">I'm Mian Abdullah, a Web Developer</p>
             <p className="mb-6 text-lg">
-              I help you build a brand for your business at an affordable price. Thousands of clients have procured exceptional results while working with our dedicated team. When an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            A seasoned web developer with expertise in the MERN stack, Docker, CI/CD pipeline management, and API integration. Proficient in creating robust and dynamic web applications using MongoDB, Express, React, and Node.js. Skilled in containerization with Docker for efficient deployment and scaling.
             </p>
             <p className="text-lg">
-              Delivering work within time and budget which meets client’s requirements is our motto. Lorem Ipsum has been the industry's standard dummy text ever when an unknown printer took a galley.
-            </p>
+            Experienced in setting up and optimizing CI/CD pipelines for seamless software delivery. Adept at seamlessly integrating third-party APIs to enhance application functionality, ensuring a smooth and feature-rich user experience.</p>
           </div>
           <div className="flex flex-col justify-between">
             <div>
@@ -32,7 +31,15 @@ const KnowMeMore = () => {
                   <span className="font-semibold">From:</span> Rawalpindi, Pakistan
                 </li>
               </ul>
-              <button className="px-4 py-2 mt-8 text-white bg-blue-500 rounded-full hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">Download CV</button>
+              <a
+  href={CV}  // Replace with the actual path to your CV file
+  download="Cv4.pdf"      // Specify the filename for the downloaded file
+>
+  <button className="px-4 py-2 mt-8 text-white bg-blue-500 rounded-full hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">
+    Download CV
+  </button>
+</a>
+
             </div>
             <div className="mt-10">
               <div className="grid grid-cols-4 gap-4">
@@ -49,8 +56,8 @@ const KnowMeMore = () => {
                   <p className="text-lg">Projects Done</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-2xl font-semibold">2</p>
-                  <p className="text-lg">Got Awards</p>
+                  <p className="text-2xl font-semibold">3</p>
+                  <p className="text-lg">Got Certificates</p>
                 </div>
               </div>
             </div>

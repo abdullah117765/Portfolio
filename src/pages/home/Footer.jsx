@@ -8,13 +8,13 @@ const Footer = () => {
     <footer className="py-8 text-white bg-gray-900">
       <div className="container flex flex-col items-center mx-auto">
         <div className="flex mb-6 space-x-4">
-          <a href="#" className="transition duration-300 ease-in-out hover:text-blue-500">
+          <a href="https://twitter.com/abdullah117765"   target="_blank" className="transition duration-300 ease-in-out hover:text-blue-500">
             <FontAwesomeIcon icon={faTwitter} size="lg" />
           </a>
-          <a href="#" className="transition duration-300 ease-in-out hover:text-blue-500">
+          <a href="https://www.linkedin.com/in/mian-abdullah-6b2661221"  target="_blank" className="transition duration-300 ease-in-out hover:text-blue-500">
             <FontAwesomeIcon icon={faLinkedin} size="lg" />
           </a>
-          <a href="#" className="transition duration-300 ease-in-out hover:text-blue-500">
+          <a href="https://github.com/abdullah117765"  target="_blank" className="transition duration-300 ease-in-out hover:text-blue-500">
             <FontAwesomeIcon icon={faGithub} size="lg" />
           </a>
         </div>
