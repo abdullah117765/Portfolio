@@ -5,7 +5,6 @@ import {
   faCode,
   faCodeCommit,
   faBug,
-  faHouseFloodWaterCircleArrowRight,
   faDesktop,
   faCloud,
 } from "@fortawesome/free-solid-svg-icons";
@@ -53,7 +52,9 @@ const WhatIDo = () => {
   return (
     <section id="whatido" className="bg-gray-700 py-36">
       <div className="container mx-auto">
-        <h2 className="mb-8 text-3xl font-semibold text-center text-white">What I Do</h2>
+        <h2 className="mb-8 text-3xl font-semibold text-center text-white">
+          What I Do
+        </h2>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service, index) => (
             <div
