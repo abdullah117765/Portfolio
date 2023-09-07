@@ -5,7 +5,7 @@ const KnowMeMore = () => {
   return (
     <section id="about" className="py-32 text-white bg-gray-900 mt-80">
       <div className="container px-6 mx-auto text-center">
-        <h2 className="mb-32 text-4xl font-bold">Know Me More</h2>
+        <h2 className="mb-32 text-5xl font-bold">Know Me More</h2>
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
           <div className="text-left">
             <p className="mb-4 text-2xl font-semibold">I'm Mian Abdullah, a Web Developer</p>

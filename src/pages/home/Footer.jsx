@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="py-8 text-white bg-gray-900">
       <div className="container flex flex-col items-center mx-auto">
-        <div className="flex mb-6 space-x-4">
+        <div className="flex mb-6 space-x-4 ">
           <a href="https://twitter.com/abdullah117765"  rel="noreferrer"  target="_blank" className="transition duration-300 ease-in-out hover:text-blue-500">
             <FontAwesomeIcon icon={faTwitter} size="lg" />
           </a>

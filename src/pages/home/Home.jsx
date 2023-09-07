@@ -61,15 +61,13 @@ const Portfolio = () => {
   }, [typeAndBackspace]);
 
   return (
-    <div
-      className="min-h-screen pt-56 overflow-hidden text-white bg-black" // Add overflow-hidden
-    >
+    <div className="min-h-screen pt-56 overflow-hidden text-white bg-black" >
       {/* Hero Section */}
       <section
         id="hero"
-        className="flex flex-col items-center justify-center p-8 lg:flex-row lg:p-16"
+        className="flex flex-col items-center justify-center p-8 lg:flex-row lg:p-16 "
       >
-        <div className="text-center lg:w-1/2 lg:text-left lg:mx-16 ">
+        <div className="text-center lg:w-1/2 lg:text-left lg:mx-60  ">
           <div
             className="mb-16 text-3xl font-bold xl:text-7xl"
             style={{ height: "2rem" }} // Set a fixed height

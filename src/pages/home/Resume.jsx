@@ -34,7 +34,7 @@ const Resume = () => {
   return (
     <section id="resume" className="py-16 text-white bg-slate-800">
       <div className="container mx-auto">
-        <h2 className="mb-12 text-4xl font-semibold text-center">Resume</h2>
+        <h2 className="mb-12 text-5xl font-semibold text-center">Resume</h2>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {/* Left Column - Education */}
           <div>

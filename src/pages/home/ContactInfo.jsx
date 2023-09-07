@@ -10,10 +10,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-10 bg-gray-900">
+    <section id="contact" className="py-10 bg-gray-900 ">
       <div className="container px-4 mx-auto">
-        <h2 className="mb-8 text-3xl font-semibold text-white">Contact Me</h2>
-        <div className="md:flex md:space-x-8">
+        <h2 className="mb-16 text-4xl font-semibold text-white ">Contact Me</h2>
+        <div className="md:flex md:space-x-8 text-left">
           {/* Contact Information */}
           <div className="md:flex md:flex-row md:w-1/2">
             <div className="mx-10 mb-4">
