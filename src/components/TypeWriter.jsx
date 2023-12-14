@@ -48,6 +48,7 @@ const TypewriterComponent = () => {
     return () => {
       clearTimeout(typewriterTimeout);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
