@@ -8,7 +8,7 @@ const TypewriterComponent = () => {
     'Cloud Native Developer',
   ];
   const [currentString, setCurrentString] = useState('');
-  const [currentIndex, setCurrentIndex] = useState(0);
+ 
 
   useEffect(() => {
     let currentIndex = 0;
