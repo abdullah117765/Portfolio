@@ -1,6 +1,6 @@
 // src/components/KnowMeMore.js
 import React from 'react';
-import CV from "../../resources/Cv4.pdf";
+import CV from "../../resources/CV-5.pdf";
 const KnowMeMore = () => {
   return (
     <section id="about" className="py-32 text-white bg-gray-900 mt-80">
@@ -33,7 +33,7 @@ const KnowMeMore = () => {
               </ul>
               <a
   href={CV}  // Replace with the actual path to your CV file
-  download="Cv4.pdf"      // Specify the filename for the downloaded file
+  download="CV-5.pdf"      // Specify the filename for the downloaded file
 >
   <button className="px-4 py-2 mt-8 text-white bg-blue-500 rounded-full hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">
     Download CV

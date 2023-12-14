@@ -13,71 +13,40 @@ import WhatIDo from "./DetailsSection";
 import Resume from "./Resume";
 import Contact from "./ContactInfo";
 import Footer from "./Footer";
-import "animate.css/animate.min.css";
-
+ import "animate.css/animate.min.css";
+import TypewriterComponent from "../../components/TypeWriter";
 
 const Portfolio = () => {
-  const [typewriterText, setTypewriterText] = useState("");
-  const greetingText = "Hello, I'm Abdullah";
-  const typingSpeed = 150; // Adjust typing speed (milliseconds per character)
-  const backspaceSpeed = 100; // Adjust backspace speed (milliseconds per character)
-  const delayBeforeRestart = 1000; // Delay before restarting the animation
 
-  const typeAndBackspace = useCallback(() => {
-    let currentIndex = 0;
-    const typeInterval = setInterval(() => {
-      if (currentIndex < greetingText.length) {
-        setTypewriterText(greetingText.slice(0, currentIndex + 1));
-        currentIndex++;
-      } else {
-        clearInterval(typeInterval);
-
-        setTimeout(() => {
-          // Start backspacing
-          const backspaceInterval = setInterval(() => {
-            if (currentIndex > 0) {
-              setTypewriterText(greetingText.slice(0, currentIndex - 1));
-              currentIndex--;
-            } else {
-              clearInterval(backspaceInterval);
-
-              // Delay before restarting
-              setTimeout(() => {
-                typeAndBackspace();
-              }, delayBeforeRestart);
-            }
-          }, backspaceSpeed);
-        }, delayBeforeRestart);
-      }
-    }, typingSpeed);
-
-    return () => {
-      clearInterval(typeInterval);
-    };
-  }, []);
-
-  useEffect(() => {
-    typeAndBackspace();
-  }, [typeAndBackspace]);
-
+ 
+ 
   return (
-    <div className="min-h-screen pt-56 overflow-hidden text-white bg-black" >
+    <div className="overflow-hidden text-white bg-black " >
       {/* Hero Section */}
       <section
         id="hero"
-        className="flex flex-col items-center justify-center p-8 lg:flex-row lg:p-16 "
+        className="flex flex-col justify-center lg:flex-row lg:p-16 "
       >
-        <div className="text-center lg:w-1/2 lg:text-left lg:mx-60  ">
-          <div
-            className="mb-16 text-3xl font-bold xl:text-7xl"
-            style={{ height: "2rem" }} // Set a fixed height
-          >
-            {typewriterText}
-          </div>
-          <div className="mb-6 text-6xl animate__animated animate__fadeIn animate__delay-2s ">
-            Web Developer
-          </div>
-          <p className="max-w-xl mx-auto mb-8 ml-0 text-lg  animate__animated animate__fadeIn animate__delay-3s">
+        <div className="mt-10 text-center lg:w-1/2 lg:text-left lg:mx-60">
+        <div className="">
+          <h1 className="text-3xl ml-22 ">
+            {" "}
+            Hi There!{" "}
+            <span className=" className="inline-flex items-center animate__animated animate__fadeIn animate__delay-1s
+                role="img"
+                aria-labelledby="wave">
+              👋🏻
+            </span>
+          </h1>
+
+          <h2 className="text-4xl ml-22 ">
+            I'M <span className="text-purple-600">Mian Abdullah</span>{" "}
+          </h2>
+          <h1 className="h-16 mt-12 ml-62">
+            <TypewriterComponent />
+          </h1>
+        </div>
+          <p className="max-w-xl mx-auto mb-8 ml-0 text-lg animate__animated animate__fadeIn animate__delay-3s">
             Welcome to my portfolio website. I'm passionate about creating web applications and solving problems with code. Feel free to explore my work and connect with me on social media.
           </p>
           <div className="mt-4 space-x-4 lg:mt-8 animate__animated animate__fadeIn animate__delay-4s">
@@ -113,7 +82,7 @@ const Portfolio = () => {
             >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-          </div>
+          </div> 
         </div>
         <div className="w-full h-full text-center lg:w-1/2">
           <img

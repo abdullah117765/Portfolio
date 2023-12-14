@@ -1,5 +1,5 @@
 import React from 'react';
-import CV from "../../resources/Cv4.pdf";
+import CV from "../../resources/CV-5.pdf";
 const Navbar = () => {
   return (
     <nav className="py-4 bg-black">
@@ -8,8 +8,8 @@ const Navbar = () => {
         <div className="flex items-center text-3xl font-bold text-white font-heading">
           <span className="mr-2">🚀</span> {/* Add an emoji or an icon */}
           <div>
-            <span className="text-lg text-blue-500">Syed Abdullah</span>
-            <span className="block text-sm text-gray-400">Web Developer</span>
+            <span className="text-lg text-blue-500">Mian Abdullah</span>
+            <span className="block text-xs text-gray-400">Full stack Developer</span>
           </div>
         </div>
 
@@ -40,7 +40,7 @@ const Navbar = () => {
           </a>
           <a
            href={CV}  // Replace with the actual path to your CV file
-  download="Cv4.pdf"
+  download="CV-5.pdf"
             className="px-4 py-2 text-white transition duration-300 ease-in-out border border-white rounded-full hover:bg-gray-800 hover:border-gray-800"
           >
            Download Cv
