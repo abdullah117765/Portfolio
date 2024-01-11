@@ -40,7 +40,7 @@ const Navbar = () => {
           </a>
           <a
            href={CV}  // Replace with the actual path to your CV file
-  download="CV-5.pdf"
+  download="CV.pdf"
             className="px-4 py-2 text-white transition duration-300 ease-in-out border border-white rounded-full hover:bg-gray-800 hover:border-gray-800"
           >
            Download Cv

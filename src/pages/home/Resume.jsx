@@ -63,13 +63,6 @@ const Resume = () => {
           <div>
             <h3 className="mb-4 text-xl font-semibold">My Experience</h3>
            
-            
-             <ExperienceCard
-              year="2022 - 2022"
-              position="Android Development"
-              company="Netwest Technology"
-              description="In this short Internship i explored the world of Android development using Android Studio."
-            />
             <ExperienceCard
               year="2023 - 2023"
               position="Web Developer"
@@ -82,6 +75,12 @@ const Resume = () => {
               company="Upwork/Fiver"
               description="I am a freelance web developer crafting custom web applications to meet clients' unique needs and aspirations."
             />
+              <ExperienceCard
+              year="2023"
+              position="Aws Cloud practioner Certification exam"
+              company="Amazon Web Services Training and Certification"
+              description="Earners of this certification have a fundamental understanding of IT services and their uses in the AWS Cloud. They demonstrated cloud fluency and foundational AWS knowledge. "
+            />
           </div>
         </div>
 
@@ -89,10 +88,12 @@ const Resume = () => {
         <div className="mt-12">
           <h3 className="mb-4 text-xl font-semibold">My Skills</h3>
           <div className="flex flex-wrap">
-            <SkillBadge title="Mongo Db" />
+            <SkillBadge title="Mern Stack" />
             <SkillBadge title="HTML/CSS" />
             <SkillBadge title="JavaScript" />
             <SkillBadge title="React JS" />
+            <SkillBadge title="Node JS" />
+            <SkillBadge title="Mongo Db" />
             <SkillBadge title="Type Script" />
             <SkillBadge title="Tailwind Css" />
             <SkillBadge title="Sql Databases" />
@@ -100,8 +101,8 @@ const Resume = () => {
             <SkillBadge title="Github" />
             <SkillBadge title="Ci/cd Pipeline" />
             <SkillBadge title="Java" />
-            <SkillBadge title="C#" />
-            <SkillBadge title="AWs" />
+            <SkillBadge title="linux" />
+            <SkillBadge title="AWS" />
           </div>
         </div>
       </div>
