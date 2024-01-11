@@ -84,11 +84,11 @@ const Portfolio = () => {
             </a>
           </div> 
         </div>
-        <div className="w-full h-full text-center lg:w-1/2">
+        <div className="w-full h-full text-center mt-16 lg:w-1/2">
           <img
             src={profilepic}
             alt="Abdulla's Profile"
-            className="mx-auto border-4 border-white rounded-full w-72 h-72 animate__animated animate__fadeIn animate__delay-2s lg:mx-0"
+            className="mx-auto border-4 border-white rounded-full  w-72 h-72 animate__animated animate__fadeIn animate__delay-2s lg:mx-0"
           />
         </div>
       </section>

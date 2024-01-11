@@ -1,5 +1,5 @@
 import React from 'react';
-import CV from "../../resources/CV-5.pdf";
+import CV from "../../resources/Cv.pdf";
 const Navbar = () => {
   return (
     <nav className="py-4 bg-black">

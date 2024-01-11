@@ -28,7 +28,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="text-sm">
-          &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+          &copy; {new Date().getFullYear()} Mian Abdullah. All rights reserved.
         </div>
         <div className="text-sm">
           Designed and built with ❤️ using React and Tailwind CSS
