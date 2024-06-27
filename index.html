@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f5cb6fcd36.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- --------------header-section--------------- -->
+    <div id="header">
+        <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>  
+                <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Mian Abdullah</span> <br> From Pakistan</h1>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------about-section--------------- -->
+<div id="about">
+    <div class="container">
+         <div class="row">
+            <div class="about-col-1">
+                <img src="images/MeS.jpeg">
+            </div>
+
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="about-para">As a Software Engineering student fascinated by software
+                    development, I thrive on problem-solving and innovation.
+                    Continuously pursuing new challenges, I am dedicated to
+                    delivering top-notch results, whether collaborating in a team or
+                    working independently.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Javascript, Python, Java, C#</li>
+                            <li><span>Front-end Technologies</span><br>HTML, CSS, JS, React Js, Next Js</li>
+                            <li><span>Back-end Frameworks</span><br>Node.js, Express.js, Flask</li>
+                            <li><span>Full-Stack Development</span><br>MERN</li>
+                            <li><span>Database Management</span><br>MySQL, PostgreSQL, MongoDb</li>
+                            <li><span>DevOps</span><br> Docker, Git actions, Jenkins,Linux </li>
+                            <li><span>Cloud</span><br>Aws Cloud Formation, Ec2, S3, Route53, etc</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>July 2023 - 2023</span><br>Mern Stack internship at Enginma Solutions</li>
+                            <li><span>May 2024 - current</span><br>Junior Software Engineer at Invotyx</li>
+            
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Fast Nuces, Islamabad</span><br>Bachelor of Science - Software Engineering<br>2020 - 2024</li>
+                            <li><span>Fauji Foundation College, Rawalpindi</span><br>Intermediate - Pre-engineering<br>2018 - 2020</li>
+                            <li><span>Fauji Foundation school, Rawalpindi</span><br>Matriculation - Science<br>2016 - 2018</li>
+                        </ul>
+                    </div>
+            </div>
+         </div>
+    </div>
+</div>
+
+
+<!-- -----------------expertise-section--------------- -->
+<div id="expertise">
+    <div class="container">
+        <h1 class="sub-title">Expertise</h1>
+        <div class="expertise-list">
+            <div class="expert">
+                <img src="images/Frontend.png">
+                <div class="layer">
+                    <h2>Frontend Development</h2>
+                    <p>I have a strong grip on the following Tools/Technologies: HTML, CSS, React.js, Next.js, Material UI, Tailwind CSS, 
+                        APIs </p>
+                </div>
+            </div>
+
+            <div class="expert">
+                <img src="images/Backend.png">
+                <div class="layer">
+                    <h2>Backend Development</h2>
+                    <p>I have worked on the following <br>Languages: Javascript, Python, Java<br>Frameworks: Express, 
+                        Node.js, Flask<br>Databases: MySQL,Oracle Sql Server <br> PostgreSQL, MongoDb <br>Version Control Systems: Git</p>
+                </div>
+            </div>
+
+            <div class="expert">
+                <img src="images/CloudDev.png">
+                <div class="layer">
+                    <h2>DevOps And Cloud</h2>
+                    <p>Proficient in the following Tools: Aws Services, Jenkins, Git Actions Workflows <br> Docker, kubernetes Basics</p>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="https://www.linkedin.com/in/mian-abdullah-6b2661221/details/certifications/" class="btn">My Certificates</a> -->
+        <button onclick="certificates()" class="btn">My Certificates</button>
+    </div>
+</div>
+
+
+<!-- ------------------------projects-section------------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-house"></i>
+                <h2>FYP Managment and Automation through DevOps</h2>
+                <p>Core Technologies: MERN stack, AWS, Jenkins, Docker, Flask</p>
+                <button onclick="DepEase()">View code</button>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-utensils"></i>
+                <h2>Profiler</h2>
+                <p>Core Technologies: MERN, Docker, AWS EC2</p>
+                <button onclick="Profiler()">View code</button>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Mlops_CI_CD_Automation</h2>
+                <p>Core Technologies: Flask, Python, Jenkins, Docker</p>
+                <button onclick="Mlops_CI_CD_Automation()">View code</button>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>BitRypto</h2>
+                <p>Core Technology: Blockchain, Flask, Python, React Js, MongoDB</p>
+                <button onclick="BitRypto()">View code</button>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-chess"></i>
+                <h2>UniEase</h2>
+                <p>Core Technology: Java, JavaFX, MySql</p>
+                <button onclick="UniEase()">View code</button>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>TechSella Ecommerce</h2>
+                <p>Core Technologies: Mern Stack</p>
+                <button onclick="Ecommerce()">View code</button>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-list"></i>
+                <h2>MlopsDataVersioning</h2>
+                <p>Core Technologies: dvc, google drive,git</p>
+                <button onclick="MlopsDataVersioning()">View code</button>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <h2>AWS_CloudFormation</h2>
+                <p>Core Technologies: Aws cloud Formation, yml</p>
+                <button onclick="AWS_CloudFormation()">View code</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- -----------------contact-section--------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> s.abdullah117765@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone-flip"></i> +92 311-0579957</p>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/mian-abdullah-6b2661221/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/abdullah117765"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.upwork.com/freelancers/~016e8245662e5ecea3"><i class="fa-brands fa-upwork"></i></a>
+                    
+                </div>
+                
+                <a href="Mian Abdullah CV.pdf" download class="btn btn2">Download Resume</a>
+
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright <span>&copy;</span> 2024, Mian Abdullah</p>
+    </div>
+ </div>
+
+
+<script>
+    // -------------about-section--------------
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+    //javaScript function to navigate to an external URL when the button is clicked
+    function DepEase() {
+      window.open("https://github.com/hamza442-ali/Frontend_DepEase.git", "_blank");
+    }
+
+    function Profiler() {
+      window.open("https://github.com/abdullah117765/SCD_Project.git", "_blank");
+    }
+
+    function Ecommerce() {
+      window.open("https://github.com/abdullah117765/Ecommerce.git", "_blank");
+    }
+
+    function BitRypto() {
+      window.open("https://github.com/abdullah117765/Wallet--BlockChain.git", "_blank");
+    }
+
+    function UniEase() {
+      window.open("https://github.com/abdullah117765/SQE-Project.git", "_blank");
+    }
+
+    function Mlops_CI_CD_Automation() {
+      window.open("https://github.com/abdullah117765/Mlops_CI-CD_Automation", "_blank");
+    }
+
+    function MlopsDataVersioning() {
+      window.open("https://github.com/abdullah117765/MlopsDataVersioning.git", "_blank");
+    }
+
+    function AWS_CloudFormation() {
+      window.open("https://github.com/abdullah117765/AWS_CloudFormation_Templates.git", "_blank");
+    }
+
+    function certificates() {
+      window.open("https://www.linkedin.com/in/mian-abdullah-6b2661221/details/certifications/", "_blank");
+    }
+
+
+    //javascript function for the mobile screen, open menu and close menu
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+
+
+
+</body>
+</html>
