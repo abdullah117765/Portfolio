@@ -299,8 +299,26 @@
 
 </script>
 
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwMgumAYWOOB6hpBh3nQCVD1OjQir5hh9W0RD4zkki_pkagiWtn9yKkEhY_1Ne3jHpI/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert('Thanks for the Message, I will get back to you Shortly.'))
+        .catch(error => console.error('Error!', error.message))
+    })
 
+    
+  </script>
 
+<script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevents the default form submission
+        alert('Thanks for the Message, I will get back to you Shortly.');
+    });
+</script>
 
 </body>
 </html>
